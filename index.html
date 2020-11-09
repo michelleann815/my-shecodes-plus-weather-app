@@ -1,13 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/568485ce44.js" crossorigin="anonymous"></script>
+    <title>SheCodesPlusHomework5</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
-    <h1>Hello Git</h1>
-    <script src="script.js"></script>
+    <div class="container">
+        <br />
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <h1>
+                            Shinjuku-ku, Tokyo
+                        </h1>
+                        <div class="float-right" id="temperature">17</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row" id="today">
+                            <div class="todays-date-and-time">
+                                <h5 id="todays-date-and-time"></h5>
+                            </div>
+                            <div class="col-6">
+                                <form class="float-left">
+                                    <p>
+                                        Precipitation: <span id="precipitation">65</span>%
+                                        <br />
+                                        Wind Speed: <span id="wind">2</span>km/h
+                                        <br />
+                                        Humidity: <span id="humidity">54</span>%
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Monday</h5>
+                                        <p class="card-text">
+                                            <img src="images/cloudy.png" width="115px">
+                                            24°C
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tuesday</h5>
+                                        <p class="card-text">
+                                            <img src="images/cloudy.png" width="115px">
+                                            26°C
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Wednesday</h5>
+                                        <p class="card-text">
+                                            <img src="images/sunny.png" width="90px">
+                                            23°C
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Thursday</h5>
+                                        <p class="card-text">
+                                            <img src="images/rainy.png" width="90px">
+                                            19°C
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Friday</h5>
+                                        <p class="card-text">
+                                            <img src="images/rainy.png" width="90px">
+                                            16°C
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="search-bar" id="search-city-form">
+                            <input type="text" class="city" id="search-city-input" placeholder="Enter city here">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                            <button type="button" class="btn btn-danger" id="fahrenheit-link">°F</button>
+                            <button type="button" class="btn btn-primary" id="celsius-link">°C</button>
+
+                        </form>
+                        <br />
+                    </div>
+                    <script src="src/index.js"></script>
 </body>
+
 </html>
