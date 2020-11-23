@@ -54,16 +54,18 @@ function convertToF () {
 let temp = Number(document.querySelector("#today-temp").innerHTML);
 // console.log ("temp",temp);
 // console.log(typeof temp);
-const fahrenheitResult = (temp*9/5) + 32;
+const fahrenheitResult = Math.round(temp*9/5) + 32;
 // console.log("fahrenheit",fahrenheitResult);
 document.querySelector("#today-temp").innerHTML = fahrenheitResult;
 }
 
-//create a function called convert to C 
-//declaring a variable temp, selecting temperature ID with innerHTML replacing text and making sure it's a number not a string
-//declare const for the temperature conversion equation fahrenheit --> celsius = celsius result
-//selecting the text innerHTML with the ID of temperature and setting it equal to celsius result
+function convertToC () {
+  let temp= Number(document.querySelector("#today-temp").innerHTML);
+  const celsiusResult = Math.round(temp-32)*5/9;
+  document.querySelector("#today-temp").innerHTML = celsiusResult;
+}
 
+//Need to prevent buttons from calculating too much
 
 let searchCityForm = document.querySelector("#search-city-form");
 searchCityForm.addEventListener("submit", searchCity);
@@ -71,10 +73,12 @@ searchCityForm.addEventListener("submit", searchCity);
 let fahrenheitButton = document.querySelector("#fahrenheit-link");
 fahrenheitButton.addEventListener("click", convertToF);
 
-// celsius Button equal to document query Selector with ID of celsius link
-//add Event Listener to celsiusButton with function click convert to C 
+let celsiusButton = document.querySelector("#celsius-link");
+celsiusButton.addEventListener("click", convertToC);
 
-//Features
+//Geolocation
+
+
 let dateElement = document.querySelector("#todays-date-and-time");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
