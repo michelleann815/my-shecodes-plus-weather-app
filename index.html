@@ -22,8 +22,6 @@
                         <h1>
                             Shinjuku-ku, Tokyo
                         </h1>
-                        <div class="float-right" id="temperature">17</div>
-                    </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
@@ -34,8 +32,6 @@
                             <div class="col-6">
                                 <form class="float-left">
                                     <p>
-                                        Precipitation: <span id="precipitation">65</span>%
-                                        <br />
                                         Wind Speed: <span id="wind">2</span>km/h
                                         <br />
                                         Humidity: <span id="humidity">54</span>%
@@ -48,54 +44,12 @@
                             <div class="col-sm">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Monday</h5>
+                                        <h5 class="card-title">Today</h5>
                                         <p class="card-text">
-                                            <img src="images/cloudy.png" width="115px">
-                                            24°C
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Tuesday</h5>
-                                        <p class="card-text">
-                                            <img src="images/cloudy.png" width="115px">
-                                            26°C
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Wednesday</h5>
-                                        <p class="card-text">
-                                            <img src="images/sunny.png" width="90px">
-                                            23°C
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Thursday</h5>
-                                        <p class="card-text">
-                                            <img src="images/rainy.png" width="90px">
-                                            19°C
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Friday</h5>
-                                        <p class="card-text">
-                                            <img src="images/rainy.png" width="90px">
-                                            16°C
+                                            <img src="images/cloudy.png" width="115px" id="weather-icon">
+                                            <div id="today-temp">
+                                            </div>
+                                            <div id="weather-description"></div>
                                         </p>
                                     </div>
                                 </div>
