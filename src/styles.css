@@ -63,6 +63,11 @@ card-body {
   margin-top: 10px;
 }
 
-#today {
-  max-width: 400px;
+#today-temp {
+  font-size: 50px;
+  text-align: center;
+}
+
+#degree-symbol {
+  font-size: 50px;
 }

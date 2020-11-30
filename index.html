@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col">
                         <h1>
-                            Shinjuku-ku, Tokyo
+                            City Location
                         </h1>
                 </div>
                 <div class="card">
@@ -32,9 +32,11 @@
                             <div class="col-6">
                                 <form class="float-left">
                                     <p>
-                                        Wind Speed: <span id="wind">2</span>km/h
+                                        Wind Speed: <span id="wind"></span>km/h
                                         <br />
-                                        Humidity: <span id="humidity">54</span>%
+                                        Humidity: <span id="humidity"></span>%
+                                        <br />
+                                        <span id="current-description"></span>
                                     </p>
                                 </form>
                             </div>
@@ -42,17 +44,12 @@
                         <br />
                         <div class="row">
                             <div class="col-sm">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Today</h5>
                                         <p class="card-text">
-                                            <img src="images/cloudy.png" width="115px" id="weather-icon">
-                                            <div id="today-temp">
-                                            </div>
+                                            <img src="" width="115px" id="weather-icon">
+                                            <span id="today-temp">
+                                            </span><span id="degree-symbol">°</span>
                                             <div id="weather-description"></div>
                                         </p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <form class="search-bar" id="search-city-form">
